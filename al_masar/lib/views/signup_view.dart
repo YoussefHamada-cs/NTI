@@ -1,5 +1,7 @@
+import 'package:al_masar/core/custom_container.dart';
 import 'package:al_masar/core/widgets/custom_button.dart';
 import 'package:al_masar/core/widgets/custom_text_from_field.dart';
+import 'package:al_masar/views/login_view.dart';
 import 'package:flutter/material.dart';
 
 class SignupView extends StatefulWidget {
@@ -35,15 +37,7 @@ class _SignupViewState extends State<SignupView> {
             bottom: 0,
             left: 0,
             right: 0,
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 24),
-              decoration: const BoxDecoration(
-                color: Color(0xFF1380A5),
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                ),
-              ),
+            child: CustomContainer(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -139,7 +133,7 @@ class _SignupViewState extends State<SignupView> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => SignupView(),
+                              builder: (context) => LoginView(),
                             ),
                           );
                         },

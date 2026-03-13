@@ -1,14 +1,15 @@
 import 'package:al_masar/core/custom_container.dart';
 import 'package:al_masar/core/widgets/custom_button.dart';
-import 'package:al_masar/views/login_view.dart';
-import 'package:al_masar/views/signup_view.dart';
+import 'package:al_masar/core/widgets/pin_put_widget.dart';
 import 'package:flutter/material.dart';
 
-class WelcomeView extends StatelessWidget {
-  const WelcomeView({super.key});
+
+class OtpView extends StatelessWidget {
+  const OtpView({super.key});
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       body: Stack(
         children: [
@@ -20,7 +21,7 @@ class WelcomeView extends StatelessWidget {
             //     MediaQuery.of(context).size.height *
             //     0.7,
             child: Image.asset(
-              'assets/images/image_welcome.jpeg',
+              'assets/images/image_login.jpeg',
               fit: BoxFit.cover,
               alignment: Alignment.topCenter,
             ),
@@ -35,37 +36,42 @@ class WelcomeView extends StatelessWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  SizedBox(height: 50),
                   const Text(
-                    'أهلاً بك في مؤسسة المسد\n للفئات الخاصة',
+                    'أدخل رمز التحقق OTP',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       height: 1.5,
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 8),
-                  CustomButton(
-                    text: 'تسجيل الدخول',
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => LoginView()),
-                      );
-                    },
+
+                  const Text(
+                    'لقد أرسلنا الكود الخاص بك إلى 010*****000.\n سينتهي هذا الكود في 00:3',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      height: 1.5,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 8),
-                  CustomButton(
-                    text: 'إنشاء حساب',
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => SignupView()),
-                      );
-                    },
+
+                  SizedBox(height: 20),
+                  Directionality(
+                    // Specify direction if desired
+                    textDirection: TextDirection.rtl,
+                    child: PinPutWidget(
+                     
+                    ),
                   ),
-                  const SizedBox(height: 6),
+
+                  const SizedBox(height: 50),
+                  CustomButton(text: 'تاكيد', onPressed: () {}),
+
+                  const SizedBox(height: 50),
                 ],
               ),
             ),

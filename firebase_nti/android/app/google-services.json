@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "433626121111",
+    "project_id": "fir-nti-9c0b2",
+    "storage_bucket": "fir-nti-9c0b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433626121111:android:6f73d496eefbd16047bad2",
+        "android_client_info": {
+          "package_name": "com.example.firebase_nti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMdog_GwJwNTjgtEpJG4j3Oec96BQoDXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1068611194302",
+    "project_id": "al-masar-75c31",
+    "storage_bucket": "al-masar-75c31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068611194302:android:081cf2b3919984b147fdef",
+        "android_client_info": {
+          "package_name": "com.example.al_masar_firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068611194302-o4pa5vhmoedqk98ng3cpn8tc760c75hs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.al_masar_firebase_auth",
+            "certificate_hash": "73ed3f518fa97e40392b5b49a66deaed8b1fbbab"
+          }
+        },
+        {
+          "client_id": "1068611194302-it8i9uq0lrflmv2hm54ag30osjc29r4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd_A5BOzrAlDpOXPC44fGI6REcTPp2adg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068611194302-it8i9uq0lrflmv2hm54ag30osjc29r4t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1068611194302-9mlp5labm833pa3150s5u339d66i5imr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.alMasarFirebaseAuth"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
